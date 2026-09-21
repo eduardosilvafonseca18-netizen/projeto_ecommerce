@@ -1,47 +1,135 @@
-[README (2).md](https://github.com/user-attachments/files/32489543/README.2.md)
-# Dashboard de E-commerce
+# 📊 Dashboard de E-commerce
 
-Dashboard interativo desenvolvido como continuação do projeto de análise exploratória de dados do curso de Analista de Dados.
+Dashboard interativo desenvolvido em **Python** como continuação de um projeto de análise exploratória de dados do curso de **Analista de Dados**.
 
-## Objetivo
+O projeto transforma as análises realizadas no notebook em uma aplicação web interativa, permitindo explorar os dados de forma visual, dinâmica e sem a necessidade de executar o código Python diretamente.
 
-Transformar as análises do notebook anterior em uma aplicação web interativa, permitindo que o usuário visualize os dados sem precisar interagir diretamente com o Python.
+## 🎯 Objetivo
 
-## Tecnologias
+Apresentar informações relevantes sobre produtos de e-commerce por meio de indicadores e visualizações interativas, facilitando a análise de:
 
-- Python
-- Pandas
-- Plotly
-- Dash
-- SciPy
+- preços;
+- avaliações;
+- descontos;
+- marcas;
+- gêneros;
+- vendas.
 
-## Visualizações
+## 🛠️ Tecnologias utilizadas
 
-O dashboard apresenta:
+- **Python** — desenvolvimento da aplicação
+- **Pandas** — leitura e tratamento dos dados
+- **Plotly** — criação dos gráficos interativos
+- **Dash** — construção do dashboard web
+- **NumPy** — apoio aos cálculos das visualizações
 
-- Histograma da distribuição de preços
-- Gráfico de dispersão entre preço e número de avaliações
-- Mapa de calor das correlações
-- Gráfico de barras das principais marcas
-- Gráfico de pizza por gênero
-- Curva de densidade dos preços
-- Regressão entre avaliações e quantidade de vendas codificada
+## 📈 Visualizações
 
-Também foram adicionados filtros por gênero e temporada e indicadores com quantidade de produtos, preço médio, nota média e média de avaliações.
+O dashboard reúne as visualizações desenvolvidas no módulo anterior:
 
-## Como executar
+| Visualização | Objetivo |
+|---|---|
+| 📊 Histograma | Analisar a distribuição dos preços |
+| 🔵 Dispersão | Observar a relação entre preço e número de avaliações |
+| 🔥 Mapa de calor | Identificar correlações entre variáveis numéricas |
+| 📈 Barras | Comparar as marcas com maior quantidade de produtos |
+| 🥧 Pizza | Visualizar a distribuição dos produtos por gênero |
+| 📉 Densidade | Analisar a distribuição suavizada dos preços |
+| 📐 Regressão | Observar a relação entre avaliações e vendas codificadas |
 
-1. Abra a pasta do projeto no PyCharm.
-2. Certifique-se de que `ecommerce_estatistica.csv` está na mesma pasta de `app.py`.
-3. Instale as dependências:
+### Indicadores
+
+O dashboard também apresenta:
+
+- quantidade de produtos analisados;
+- preço médio;
+- nota média;
+- média de avaliações.
+
+### Filtros
+
+A aplicação permite filtrar os resultados por:
+
+- **Gênero**
+- **Temporada**
+
+Os indicadores e gráficos são atualizados de acordo com os filtros selecionados.
+
+## ▶️ Como executar
+
+### 1. Clone o repositório
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/eduardosilvafonseca18-netizen/projeto_ecommerce.git
 ```
 
-4. Execute `app.py`.
-5. Abra no navegador o endereço exibido pelo terminal, normalmente:
+Entre na pasta:
+
+```bash
+cd projeto_ecommerce
+```
+
+### 2. Crie um ambiente virtual
+
+No Windows:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3. Instale as dependências
+
+```bash
+pip install pandas dash plotly numpy
+```
+
+### 4. Execute o dashboard
+
+```bash
+python app.py
+```
+
+Abra no navegador o endereço exibido no terminal, normalmente:
 
 ```text
 http://127.0.0.1:8050/
 ```
+
+## 📂 Estrutura do projeto
+
+```text
+projeto_ecommerce/
+│
+├── .gitignore
+├── app.py
+├── dados.csv
+│
+└── assets/
+    └── style.css
+```
+
+## 🔎 Funcionamento
+
+Ao iniciar a aplicação, o arquivo `dados.csv` é carregado em um DataFrame. Os dados são tratados e utilizados para alimentar os indicadores e gráficos do dashboard.
+
+A interação com os filtros de **gênero** e **temporada** atualiza os resultados exibidos na tela, permitindo uma exploração mais dinâmica da base.
+
+## 📚 Aprendizados
+
+Este projeto reúne conhecimentos de:
+
+- análise exploratória de dados;
+- tratamento e organização de dados com Pandas;
+- visualização de dados;
+- criação de gráficos interativos com Plotly;
+- desenvolvimento de dashboards com Dash;
+- transformação de uma análise em notebook em uma aplicação web.
+
+## 🚀 Próximos passos
+
+O projeto pode ser evoluído com novas perguntas de negócio, indicadores, filtros e visualizações, ampliando as possibilidades de análise dos dados.
+
+---
+
+📌 **Projeto desenvolvido como atividade prática do curso de Analista de Dados.**
