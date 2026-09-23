@@ -126,10 +126,18 @@ Este projeto reúne conhecimentos de:
 - desenvolvimento de dashboards com Dash;
 - transformação de uma análise em notebook em uma aplicação web.
 
+## 🚀 Projeto complementar: PySpark + YouTube
+
+Nesta mesma jornada de estudos, foi criado um projeto prático de **otimização de joins com PySpark**, trabalhando com dados de vídeos e comentários do YouTube.
+
+➡️ [Acessar o projeto de otimização PySpark](./pyspark-youtube/)
+
+O projeto mostra práticas como **repartition, coalesce, broadcast, Spark SQL e explain**, além da gravação do resultado otimizado em Parquet.
+
 ## 🚀 Próximos passos
 
 O projeto pode ser evoluído com novas perguntas de negócio, indicadores, filtros e visualizações, ampliando as possibilidades de análise dos dados.
 
 ---
 
-📌 **Projeto desenvolvido como atividade prática do curso de Analista de Dados.**
+📌 **Projetos desenvolvidos como atividades práticas do curso de Analista de Dados.**
